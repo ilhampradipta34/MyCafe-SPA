@@ -17,7 +17,7 @@ import { useState } from "react";
 import { IoIosClose } from "react-icons/io";
 
 export default function NavbarCashier() {
-  const bg_url = "/src/assets/images/bg2.jpg";
+  const bg_url = "/images/bg2.jpg";
   const [search, setSearch] = useState("");
   const handleSearchChange = (e) => {
     setSearch(e.target.value);
@@ -60,7 +60,7 @@ export default function NavbarCashier() {
             )}
           </div>
 
-          <div className="flex items-center justify-end gap-2">
+          <div className="relative flex items-center justify-end gap-2">
             <div className="flex flex-col items-center">
               <MdSignalWifi4Bar
                 size={20}
@@ -71,7 +71,7 @@ export default function NavbarCashier() {
               </p>
             </div>
             <Dropdown
-              className="cursor-pointer"
+              className="absolute z-50 cursor-pointer"
               arrowIcon={false}
               inline
               label={

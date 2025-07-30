@@ -32,7 +32,7 @@ export default function SidebarMenu({ type = "admin" }) {
         <div>
           <SidebarLogo
             href="/admin/dashboard"
-            img="/src/assets/images/logo.png"
+            img="/images/logo.png"
             imgAlt="Mycafe logo"
             className=""
           >

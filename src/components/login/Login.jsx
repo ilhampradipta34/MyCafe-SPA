@@ -13,7 +13,7 @@ import { useNavigate } from "react-router";
 import Toaster from "../commons/toast/toaster";
 
 export default function Login() {
-  const bg = "/src/assets/images/bg.jpg";
+  const bg = "/images/bg.jpg";
   const [visiblePassword, setVisiblePassword] = useState(false);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -80,7 +80,7 @@ export default function Login() {
       >
         <div className="flex flex-col items-center justify-center mb-1">
           <img
-            src={"/src/assets/images/logo.png"}
+            src={"/images/logo.png"}
             alt="logo"
             className="h-auto w-52"
           />

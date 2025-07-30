@@ -17,6 +17,17 @@ import CashierAdmin from "./views/admin/cashier/Cashier.jsx";
 import NavbarCashier from "./components/layout/Dashboard/admin/Navbar.jsx";
 import KasirTransDashboard from "./views/kasir/transactionsKasir/KasirTransDashboard.jsx";
 import CashierKasir from "./views/kasir/cashier/Cashier.jsx";
+import { registerSW } from 'virtual:pwa-register';
+
+registerSW({
+  onNeedRefresh() {
+    // Kamu bisa tampilkan tombol refresh di sini jika mau
+    console.log("Update tersedia");
+  },
+  onOfflineReady() {
+    console.log("App siap offline");
+  },
+});
 
 createRoot(document.getElementById("root")).render(
   <AuthProvider>
