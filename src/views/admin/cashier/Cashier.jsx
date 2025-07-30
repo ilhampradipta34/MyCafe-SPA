@@ -95,7 +95,7 @@ export default function CashierAdmin() {
         />
       )}
       <PageHead title="MyCafe | Cashier" />
-      <div className="w-full px-4 py-4 bg-white/20 rounded-xl shadow-xl overflow-auto h-[600px]">
+      <div className="w-full px-4 py-4 bg-white/20 rounded-xl shadow-xl overflow-auto h-[570px]">
         <div className="sticky top-0 z-20 px-4 py-2 border shadow-lg backdrop-blur-md border-white/20 rounded-xl bg-white/10 ">
           <div className="grid items-center justify-around grid-cols-4 gap-4">
             <Button 
