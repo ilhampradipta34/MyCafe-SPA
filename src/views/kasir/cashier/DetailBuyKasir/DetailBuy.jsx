@@ -13,6 +13,7 @@ import { CiBank } from "react-icons/ci";
 import { useEffect, useState } from "react";
 import { supabase } from "../../../../lib/supabaseClient";
 import { loadMidtrans } from "../../../../lib/midtransClient";
+import { environtment } from "../../../../utils/midtrans";
 
 export default function DetailBuyKasir({
   cartItems = [],
@@ -195,7 +196,7 @@ const handleSubmit = async () => {
 
   // 4. Jika VA/QRIS (Midtrans Snap)
   try {
-    const res = await fetch("http://localhost:3000/api/payment-token", {
+    const res = await fetch(`${environtment.API_URL}api/payment-token`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ orderId, totalPrice }),
